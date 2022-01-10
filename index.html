@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: rgb(0, 255, 85);
+        }
+        .container div{
+            width: 33%;
+            display: inline-block;
+            overflow: hidden;
+            padding: 10px;
+        }
+        .container img:hover{
+            transform: scale(1.2);
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+            background-color:rgb(0, 255, 85);
+            overflow: hidden;
+        }
+        .container img{
+            width: 33%;
+            transition: transform 1s ease-in-out;
+        }
+        @media(max-width:600px){
+            .container div{
+                width: 49%
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>#Gallery</h1>
+        <img src="image1.jpg" alt="space">
+        <img src="image2.jpg" alt="space">
+        <img src="image3.jpg" alt="space">
+    </div>
+</body>
+</html>
